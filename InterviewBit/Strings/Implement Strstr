@@ -1,0 +1,41 @@
+/*Implement strStr().
+
+ strstr - locate a substring ( needle ) in a string ( haystack ). 
+Try not to use standard library string functions for this question.
+
+Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+ NOTE: Good clarification questions:
+What should be the return value if the needle is empty?
+What if both haystack and needle are empty?*/
+
+
+public class Solution {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public int strStr(final String haystack, final String needle) {
+        if(needle.length()>haystack.length()) return -1;
+        
+        if(needle.length() == 0) return 0;
+        
+        int i=0,j=0,start = -1;
+        boolean flag = false;
+        
+        while(i<haystack.length() && j<needle.length()){
+            if(haystack.charAt(i) == needle.charAt(j)){
+                 if(j == needle.length()-1)break;
+                    i++;
+                    j++;
+            }else{
+                i=i-j+1;
+                j=0;
+            }
+            
+        }
+           if(j == needle.length()-1&&i<haystack.length()){
+               return (i-j);
+           }   
+        return -1;
+        
+    }
+}
+
