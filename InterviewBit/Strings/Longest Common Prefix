@@ -12,7 +12,7 @@ For Example, longest common prefix of "abcdefgh" and "abcefgh" is "abc".
 public class Solution {
     public String longestCommonPrefix(ArrayList<String> A) {
         
-         if(A.size()< 1) return "";
+        if(A.size()< 1) return "";
         
         if( A.size() == 1) return A.get(0);
         
