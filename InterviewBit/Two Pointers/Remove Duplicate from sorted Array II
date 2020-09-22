@@ -8,7 +8,7 @@ Do not allocate extra space for another array, you must do this in place with co
 Note that even though we want you to return the new length, make sure to change the original array as well in place
 
 For example,
-Given input array A = [1,1,1,2],
+Given input array A = [1,1,1,2]
 
 Your function should return length = 3, and A is now [1,1,2].
 
