@@ -10,6 +10,7 @@ What should be the return value if the needle is empty?
 What if both haystack and needle are empty?*/
 
 
+
 public class Solution {
     // DO NOT MODIFY THE LIST. IT IS READ ONLY
     
